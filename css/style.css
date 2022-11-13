@@ -1,0 +1,82 @@
+:root{
+--basic-text-color: #757575;
+--h3-text-color: #212121;
+--logo-text-color: #2196F3;
+--filter-link-color:#fff;
+--footer-bkg-color: #2F303A;
+
+}
+body{
+	background-color: #fff;
+	color: var(--basic-text-color);
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+}
+
+footer{
+background-color: var(--footer-bkg-color);
+}
+/* Цвет текста #212121; 
+вторичный цвет #757575;
+*/
+.logo {
+	font-family: 'Raleway';
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+	color: var(--logo-text-color);
+}
+
+.nav-menu a {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.2;
+	color: var(--h3-text-color);
+		/*letter-spacing: 0.02em;*/
+}
+.nav-menu a:hover, 
+.nav-menu a:focus, 
+.nav-menu a:active{
+	color: var(--logo-text-color);}
+
+.filter {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.63;
+	/*letter-spacing: 0.03em;*/
+	color: var(--h3-text-color);
+}
+.filter button:hover,
+.filter button:focus,
+.filter button:active {
+	color: var(--filter-link-color);
+}
+
+.menu-contacts a {
+	color: var(--basic-text-color);
+	text-decoration: none;
+	font-weight: 500;
+	line-height: 1.2;
+	font-size: 14px;
+}
+.menu-contacts a:hover,
+.menu-contacts a:focus,
+.menu-contacts a:active {
+	color: #2196F3;
+}
+.contacts-transp a{
+	font-size: 14px;
+	text-decoration: none;
+	font-weight: 400;
+	line-height: 1.2;
+	font-style: normal;
+	color: rgba(255, 255, 255, 0.6);
+}
+.contacts-transp a:hover,
+.contacts-transp a:focus,
+.contacts-transp a:active {
+	color: var(--filter-link-color);
+}
+
+
