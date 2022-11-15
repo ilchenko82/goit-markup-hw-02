@@ -13,65 +13,98 @@ body{
 	font-style: normal;
 }
 
-footer{
-background-color: var(--footer-bkg-color);
-}
-/* Цвет текста #212121; 
-вторичный цвет #757575;
-*/
+
 .logo {
-	font-family: 'Raleway';
+	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.2;
 	letter-spacing: 0.03em;
 	color: var(--logo-text-color);
+	text-decoration: none;
 }
 
-.nav-menu a {
-	font-size: 14px;
-	font-weight: 500;
-	line-height: 1.2;
+/*Стили main*/
+.filter-header h2,
+.filter-header,
+.filter-header a{
 	color: var(--h3-text-color);
-		/*letter-spacing: 0.02em;*/
+	font-style:normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2.0;
+	letter-spacing: 0.06em;
+	list-style-type:none;
+	text-decoration: none;
 }
-.nav-menu a:hover, 
-.nav-menu a:focus, 
-.nav-menu a:active{
-	color: var(--logo-text-color);}
 
-.filter {
+.filter-header p {
+	color: var(--basic-text-color);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.03em;
+}
+/*
+.filter-header a:hover,
+.filter-header a:active,
+.filter-header a:focus {
+	text-decoration: none;
+}*/
+
+.filter-button {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.63;
 	/*letter-spacing: 0.03em;*/
 	color: var(--h3-text-color);
-}
-.filter button:hover,
-.filter button:focus,
-.filter button:active {
-	color: var(--filter-link-color);
+	list-style-type: none;
 }
 
-.menu-contacts a {
+.filter-button button:hover,
+.filter-button button:focus,
+.filter-button button:active {
+	color: var(--filter-link-color);
+}
+.nav-menu a, .nav-menu{
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.2;
+	color: var(--h3-text-color);
+	list-style-type: none;
+}
+.nav-menu a:hover, 
+.nav-menu a:focus, 
+.nav-menu a:active{
+	color: var(--logo-text-color);
+}
+
+.menu-contacts a, .menu-contacts {
 	color: var(--basic-text-color);
 	text-decoration: none;
 	font-weight: 500;
 	line-height: 1.2;
 	font-size: 14px;
+	list-style-type: none;
 }
 .menu-contacts a:hover,
 .menu-contacts a:focus,
 .menu-contacts a:active {
 	color: #2196F3;
 }
-.contacts-transp a{
+
+
+/*стили футера*/
+.footer-bckg {
+	background-color: var(--footer-bkg-color);
+}
+.contacts-transp a, .contacts-transp{
 	font-size: 14px;
 	text-decoration: none;
-	font-weight: 400;
 	line-height: 1.2;
 	font-style: normal;
 	color: rgba(255, 255, 255, 0.6);
+	list-style-type: none;
 }
 .contacts-transp a:hover,
 .contacts-transp a:focus,
