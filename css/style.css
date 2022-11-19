@@ -9,6 +9,7 @@
 --transparent-menu-text:rgba(255, 255, 255, 0.6);
 --team-bkg: #F5F4FA;
 --filter-border-color: #EEEEEE;
+--button-transparent: rgba(0, 0, 0, 0.15);
 
 }
 body {
@@ -67,7 +68,6 @@ body {
 
 .menu-contacts {
 	color: var(--basic-text-color);
-	text-decoration: none;
 	font-weight: 500;
 	line-height: 1.2;
 	font-size: 14px;
@@ -94,11 +94,11 @@ body {
 	line-height: 1.2;
 	font-style: normal;
 	color: rgba(255, 255, 255, 0.6);
-	list-style-type: none;
 }
 
 .contacts-transp-link {
 	color: rgba(255, 255, 255, 0.6);
+	text-decoration: none;
 	/*color: var(--transparent-menu-text);*/
 }
 
@@ -120,7 +120,7 @@ body {
 
 .our-rules-p{
 	font-size: 14px;
-	line-height: 1.71px;
+	line-height: 1.71;
 	/* or 171% */
 	letter-spacing: 0.03em;
 	color: var(--basic-text-color);
@@ -133,19 +133,25 @@ body {
 .blue-button{
 	background-color: var(--logo-text-color);
 	cursor: pointer;
+	color: var(--filter-link-color);
+	font-weight: 700;
+	font-size: 16;
+	line-height: 1.88;
+	border-style: hidden;
+	border-radius: 4px;
+  margin: 2px;
+	padding: 10px 32px 10px 32px;
+	box-shadow: 0px 4px 4px var(--button-transparent);
 }
 .blue-button:hover,
 .blue-button:focus {
-	background-color:var(--filter-link-color);
+	background-color:var(--black-text-color);
 	cursor: pointer;
 }
 
 .h2 {
 	font-size: 18px;
- /*font-weight: 700;
- line-height: 2.0;
- letter-spacing: 0.06em;*/
- color: var(--black-text-color);
+  color: var(--black-text-color);
 }
 
 .team {
@@ -167,6 +173,7 @@ body {
 	color: var(--basic-text-color);
 }
 .team-header{
+		color: var(--h3-text-color);
 		font-weight: 700;
 		font-size: 36px;
 		line-height: 1.67;
@@ -195,13 +202,13 @@ body {
 	text-decoration: none;
 }
 .filter-header{
-list-style-type: none;
+	list-style-type: none;
 }
 
 .filter-li{
-width: 320px;
-border: 1px solid;
-border-color: var(--filter-border-color);
+	width: 320px;
+	border: 1px solid;
+	border-color: var(--filter-border-color);
 
 }
 .filter-p {
@@ -218,22 +225,41 @@ border-color: var(--filter-border-color);
 	text-decoration: none;
 }*/
 
-.filter {
+.filter-button {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.63;
 	color: var(--h3-text-color);
 	list-style-type: none;
+	border-style: hidden;
+	border-radius: 4px;
+  margin: 2px;
 }
 .hidden{
-	visibility:hidden;
+  	position: absolute;
+		white-space: nowrap;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		border: 0;
+		padding: 0;
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		margin: -1px;
 }
 
 .filter-button:hover,
 .filter-button:focus {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.63;
 	background-color:var(--logo-text-color);
 	color: var(--filter-link-color);
 	cursor: pointer;
+	border-style: hidden;
+	border-radius: 4px;
+	margin: 2px;
+
 }
 
 /*стили футера*/
