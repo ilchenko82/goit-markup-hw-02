@@ -99,7 +99,6 @@ body {
 .contacts-transp-link {
 	color: rgba(255, 255, 255, 0.6);
 	text-decoration: none;
-	/*color: var(--transparent-menu-text);*/
 }
 
 .contacts-transp-link:hover,
@@ -218,13 +217,6 @@ body {
 	line-height: 1.87;
 	letter-spacing: 0.03em;
 }
-/*
-.filter-header a:hover,
-.filter-header a:active,
-.filter-header a:focus {
-	text-decoration: none;
-}*/
-
 .filter-button {
 	font-size: 16px;
 	font-weight: 500;
